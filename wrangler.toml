@@ -1,0 +1,24 @@
+# Cloudflare Pages & Workers Configuration
+name = "peterwachter"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# Build settings
+[env.production]
+build = { command = "echo Production build configured" }
+publish_dir = "."
+route = "ronaldbrekelmans.nl"
+
+# Custom domain
+[env.production.routes]
+pattern = "ronaldbrekelmans.nl"
+zone_name = "ronaldbrekelmans.nl"
+
+# Caching
+[env.production.performance]
+cpu_throttling = false
+
+# Security headers
+[[env.production.routes]]
+pattern = "*"
+zone_name = "ronaldbrekelmans.nl"

@@ -1,0 +1,17 @@
+# Cloudflare Pages Redirects Configuration
+# Syntax: [from] [to] [status]
+
+# Redirect www to non-www
+http://www.ronaldbrekelmans.nl/* https://ronaldbrekelmans.nl/:splat 301
+https://www.ronaldbrekelmans.nl/* https://ronaldbrekelmans.nl/:splat 301
+
+# PDF downloads
+/levensverhaal-pdf /pdf/Levensverhaal_Peter_Wachter.pdf 200
+/download-verhaal /pdf/Levensverhaal_Peter_Wachter.pdf 200
+
+# Legacy URLs (if any)
+/wachter /verhaal 301
+/peter /verhaal 301
+
+# Catch-all for spa
+/* /index.html 200
