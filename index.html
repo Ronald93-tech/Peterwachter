@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Peter Wachter (1905-1945) - Digitaal monument en onderzoeksproject van Ronald Brekelmans">
+    <meta name="keywords" content="Peter Wachter, Wereldoorlog II, Bevrijding, Margraten, Normandië">
+    <meta name="author" content="Ronald Brekelmans">
+    <meta property="og:title" content="Peter Wachter - Digitaal Monument">
+    <meta property="og:description" content="Het levensverhaal van Peter Wachter, Amerikaans soldaat (1905-1945)">
+    <meta property="og:image" content="/images/hero/peter-portret.jpg">
+    <meta property="og:url" content="https://ronaldbrekelmans.nl">
+    
+    <title>Peter Wachter - Digitaal Monument</title>
+    
+    <link rel="canonical" href="https://ronaldbrekelmans.nl">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%235f4b32'>✦</text></svg>">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+</head>
+<body>
+    <div id="root"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <a href="/" class="logo">✦ Peter Wachter</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="/" data-page="home">Home</a></li>
+                <li><a href="#verhaal" data-page="story">Verhaal</a></li>
+                <li><a href="#tijdlijn" data-page="timeline">Tijdlijn</a></li>
+                <li><a href="#galerij" data-page="gallery">Galerij</a></li>
+                <li><a href="#onderzoek" data-page="research">Onderzoek</a></li>
+                <li><a href="#download" data-page="downloads">Download</a></li>
+                <li><a href="#over" data-page="about">Over</a></li>
+                <li><a href="#contact" data-page="contact">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Wissel thema">
+                        🌙
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- HOME PAGE -->
+        <section id="home" class="page active">
+            <div class="hero">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="/images/hero/peter-portret.jpg">
+                    <img src="/images/hero/margraten-graf.jpg" alt="Het graf van Peter Wachter in Margraten" class="hero-image">
+                </picture>
+                <div class="hero-overlay">
+                    <div class="hero-content">
+                        <blockquote class="hero-quote">
+                            "Een mens is pas echt vergeten wanneer zijn naam voor het laatst wordt genoemd."
+                        </blockquote>
+                        <p class="hero-subtitle">Peter Wachter (1905–1945)</p>
+                    </div>
+                </div>
+            </div>
+
+            <section class="home-content">
+                <div class="container">
+                    <article class="introduction">
+                        <h1>Een naam die niet vergeten mag worden</h1>
+                        
+                        <p>
+                            Peter Wachter was een Amerikaanse soldaat van Duitse afkomst die stierf in Nordhausen, 
+                            Duitsland, op 17 april 1945. Zijn lichaam werd later overgebracht naar de Amerikaanse 
+                            begraafplaats in Margraten, Nederland.
+                        </p>
+
+                        <p>
+                            Dit project onderzoekt het volledige levensverhaal van Peter Wachter: van zijn jeugd in 
+                            Beieren tot zijn rol als communicatiespecialist in de 50th Signal Battalion van de Amerikaanse 
+                            Eerste Leger. Het bevat archiefmateriaal, militaire documenten, brieven en genealogisch onderzoek.
+                        </p>
+
+                        <h2>Waarom dit graf?</h2>
+
+                        <p>
+                            Ronald Brekelmans adopteerde Peters graf in 2020 als onderdeel van een persoonlijk project om 
+                            te zorgen dat de verhalen van bevrijders niet verloren gaan. Door systematisch onderzoek in 
+                            Amerikaanse, Duitse en Nederlandse archieven heeft hij een volledige biografie reconstructed.
+                        </p>
+
+                        <p>
+                            Deze website is meer dan een herdenking: het is een gelegenheid om Peter opnieuw „te ontmoeten" 
+                            door zijn brieven, militaire records, en de mensen die hem kenden.
+                        </p>
+
+                        <div class="cta-section">
+                            <a href="#verhaal" class="btn btn-primary">Ontdek het volledige verhaal →</a>
+                            <a href="#tijdlijn" class="btn btn-secondary">Bekijk de tijdlijn →</a>
+                        </div>
+                    </article>
+
+                    <aside class="quick-facts">
+                        <h3>Feiten op een rij</h3>
+                        <dl>
+                            <dt>Vogelname</dt>
+                            <dd>Peter Wachter</dd>
+                            
+                            <dt>Geboortedatum</dt>
+                            <dd>27 december 1905</dd>
+                            
+                            <dt>Geboorteplaats</dt>
+                            <dd>Bad Reichenhall, Beieren, Duitsland</dd>
+                            
+                            <dt>Overlijdensdatum</dt>
+                            <dd>17 april 1945</dd>
+                            
+                            <dt>Sterftplaats</dt>
+                            <dd>Nordhausen, Duitsland</dd>
+                            
+                            <dt>Militaire rang</dt>
+                            <dd>Technician 5th Grade (T/5)</dd>
+                            
+                            <dt>Eenheid</dt>
+                            <dd>50th Signal Battalion, First Army</dd>
+                            
+                            <dt>Begraafplaats</dt>
+                            <dd>American Cemetery Margraten, Nederland</dd>
+                        </dl>
+                    </aside>
+                </div>
+            </section>
+        </section>
+
+        <!-- STORY PAGE -->
+        <section id="verhaal" class="page">
+            <div class="container">
+                <h1>Het volledige levensverhaal</h1>
+                <p class="subtitle">Een chronologisch verslag op basis van originele bronnen</p>
+
+                <div id="story-chapters" class="chapters-container">
+                    <!-- Gegenereerd met JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- BIOGRAPHY PAGE -->
+        <section id="biografie" class="page">
+            <div class="container">
+                <h1>Peter Wachter — Biografie</h1>
+                
+                <div class="bio-grid">
+                    <article class="bio-section">
+                        <h2>Vroeg leven</h2>
+                        <p>
+                            Peter Wachter werd geboren op 27 december 1905 in Bad Reichenhall, een kuuroord in het zuidoostelijke 
+                            deel van Beieren, tegen de Oostenrijkse grens. Zijn Familie had sterke banden met het lokale leven.
+                        </p>
+                        <p>
+                            In de jaren twintig emigreerde Peter naar Amerika, zoals veel Duitsers deden op zoek naar betere 
+                            kansen. Hij vestigde zich in Milwaukee, Wisconsin, een stad met een grote Duitse diaspora.
+                        </p>
+                    </article>
+
+                    <article class="bio-section">
+                        <h2>Amerika</h2>
+                        <p>
+                            In Amerika werkte Peter en werd hij in 1935 Amerikaans staatsburger. Hij bouwde een nieuw leven op, 
+                            maar bleef verbonden met zijn Duitse wortels. In 1941, na de aanval op Pearl Harbor, meldde hij zich 
+                            aan voor militaire dienst.
+                        </p>
+                    </article>
+
+                    <article class="bio-section">
+                        <h2>Militaire dienst</h2>
+                        <p>
+                            Peter diende in de 50th Signal Battalion van de Amerikaanse Eerste Leger. Hij was Technician 5th Grade 
+                            (T/5), een communicatiespecialist. In juni 1944 landde hij met de invasiemacht in Normandië.
+                        </p>
+                    </article>
+
+                    <article class="bio-section">
+                        <h2>Bevrijdingscampagne</h2>
+                        <p>
+                            Peter vocht in de campagnes door Frankrijk, België en Duitsland. Hij overleefde D-Day, Normandië, de gevechten 
+                            in Frankrijk, en de Slag om de Ardennen. Op 17 april 1945 overleed hij in Nordhausen, Duitsland, waarschijnlijk 
+                            aan ziekte of verwondingen.
+                        </p>
+                    </article>
+
+                    <article class="bio-section">
+                        <h2>Erfenis</h2>
+                        <p>
+                            Peter werd begraven op de American Cemetery in Margraten, Nederland. In 2020 adopteerde Ronald Brekelmans 
+                            zijn graf als onderdeel van een persoonlijk project om de geschiedenis van bevrijders levend te houden.
+                        </p>
+                    </article>
+
+                    <article class="bio-section">
+                        <h2>Bronnen</h2>
+                        <p>
+                            Dit biografische overzicht is gebaseerd op:
+                        </p>
+                        <ul>
+                            <li>Militaire archieven (NARA)</li>
+                            <li>Paspoort- en naturalisatiedocumenten</li>
+                            <li>Personeelsbestanden van Milwaukee</li>
+                            <li>Correspondentie van Lena Klopfer</li>
+                            <li>Onderzoekswerk in Duitse archieven</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <section class="map-section">
+                    <h2>Geografische sleutelpunten</h2>
+                    <div class="location-grid">
+                        <div class="location-card">
+                            <h3>Bad Reichenhall</h3>
+                            <p>Geboorteplaats (1905)</p>
+                            <span class="emoji">🏔️ Beieren, Duitsland</span>
+                        </div>
+                        <div class="location-card">
+                            <h3>Milwaukee</h3>
+                            <p>Emigratie en americanisering (1928-1941)</p>
+                            <span class="emoji">🇺🇸 Wisconsin, USA</span>
+                        </div>
+                        <div class="location-card">
+                            <h3>Camp McCoy</h3>
+                            <p>Militaire training (1941-1943)</p>
+                            <span class="emoji">🎖️ Wisconsin, USA</span>
+                        </div>
+                        <div class="location-card">
+                            <h3>Engeland</h3>
+                            <p>Voorbereiding invasie (1944)</p>
+                            <span class="emoji">🇬🇧 Brabants Approach</span>
+                        </div>
+                        <div class="location-card">
+                            <h3>Normandië</h3>
+                            <p>D-Day landing (juni 1944)</p>
+                            <span class="emoji">⚔️ Frankrijk</span>
+                        </div>
+                        <div class="location-card">
+                            <h3>Margraten</h3>
+                            <p>Definitieve rustplaats (1949)</p>
+                            <span class="emoji">🕊️ Nederlandse begraafplaats</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- TIMELINE PAGE -->
+        <section id="tijdlijn" class="page">
+            <div class="container">
+                <h1>Levenslijn van Peter Wachter</h1>
+                <p class="subtitle">1905 — 1949</p>
+
+                <div class="timeline-container">
+                    <div class="timeline">
+                        <div class="timeline-event" data-year="1905">
+                            <div class="timeline-marker">
+                                <div class="timeline-dot"></div>
+                            </div>
+                            <div class="timeline-content">
+                                <h3>Geboorte</h3>
+                                <p class="date">27 december 1905</p>
+                                <p>Peter Wachter wordt geboren in Bad Reichenhall, Beieren.</p>
+                                <img src="/images/01-jeugd-beieren/bad-reichenhall.jpg" alt="Bad Reichenhall" class="timeline-image" loading="lazy">
+                            </div>
+                        </div>
+
+                        <div class="timeline-event" data-year="1928">
+                            <div class="timeline-marker">
+                                <div class="timeline-dot"></div>
+                            </div>
+                            <div class="timeline-content">
+                                <h3>Emigratie naar Amerika</h3>
+                                <p class="date">circa 1928</p>
+                                <p>Peter emigreert naar de Verenigde Staten. Hij reist per schip naar Wisconsin.</p>
+                                <img src="/images/02-emigratie-amerika/ss-munchen.jpg" alt="Schip SS München" class="timeline-image" loading="lazy">
+                            </div>
+                        </div>
+
+                        <div class="timeline-event" data-year="1935">
+                            <div class="timeline-marker">
+                                <div class="timeline-dot"></div>
+                            </div>
+                            <div class="timeline-content">
+                                <h3>Amerikaans staatsburger</h3>
+                                <p class="date">1935</p>
+                                <p>Peter wordt genaturaliseerd en krijgt de Amerikaanse nationaliteit.</p>
+                                <img src="/images/03-amerika/naturalisatiekaart.jpg" alt="Naturalisatiekaart" class="timeline-image" loading="lazy">
+                            </div>
+                        </div>
+
+                        <div class="timeline-event" data-year="1941">
+                            <div class="timeline-marker">
+                                <div class="timeline-dot"></div>
+                            </div>
+                            <div class="timeline-content">
+                                <h3>Inlijving legerdienst</h3>
+                                <p class="date">1941</p>
+                                <p>Peter meldt zich aan voor militaire dienst na Pearl Harbor.</p>
+                                <img src="/images/04-oorlog/camp-mccoy.jpg" alt="Camp McCoy" class="timeline-image" loading="lazy">
+                            </div>
+                        </div>
+
+                        <div class="timeline-event" data-year="1944-06">
+                            <div class="timeline-marker">
+                                <div class="timeline-dot"></div>
+                            </div>
+                            <div class="timeline-content">
+                                <h3>D-Day — Normandië</h3>
+                                <p class="date">juni 1944</p>
+                                <p>Peter participates in de invasie van Normandië als onderdeel van de 50th Signal Battalion.</p>
+                                <img src="/images/05-normandie/normandie.jpg" alt="Normandië" class="timeline-image" loading="lazy">
+                            </div>
+                        </div>
+
+                        <div class="timeline-event" data-year="1944-08">
+                            <div class="timeline-marker">
+                                <div class="timeline-dot"></div>
+                            </div>
+                            <div class="timeline-content">
+                                <h3>Bevrijding Frankrijk</h3>
+                                <p class="date">augustus 1944</p>
+                                <p>Peter vecht mee aan de bevrijding van Frankrijk met de 1st Army (Big Red One).</p>
+                                <img src="/images/06-frankrijk-belgie/big-red-one.jpg" alt="1st Army insignia" class="timeline-image" loading="lazy">
+                            </div>
+                        </div>
+
+                        <div class="timeline-event" data-year="1944-12">
+                            <div class="timeline-marker">
+                                <div class="timeline-dot"></div>
+                            </div>
+                            <div class="timeline-content">
+                                <h3>Ardennenoffensief</h3>
+                                <p class="date">december 1944 — januari 1945</p>
+                                <p>Peter overleeft de grootste Duitse tegenaanval in België.</p>
+                                <img src="/images/07-ardennen/belgium-winter.jpg" alt="Belgische winter" class="timeline-image" loading="lazy">
+                            </div>
+                        </div>
+
+                        <div class="timeline-event" data-year="1945-04">
+                            <div class="timeline-marker">
+                                <div class="timeline-dot"></div>
+                            </div>
+                            <div class="timeline-content">
+                                <h3>Dood in Nordhausen</h3>
+                                <p class="date">17 april 1945</p>
+                                <p>Peter overlijdt in Nordhausen, Duitsland. Oorzaak: waarschijnlijk ziekte.</p>
+                                <img src="/images/08-duitsland/nordhausen.jpg" alt="Nordhausen" class="timeline-image" loading="lazy">
+                            </div>
+                        </div>
+
+                        <div class="timeline-event" data-year="1949">
+                            <div class="timeline-marker">
+                                <div class="timeline-dot"></div>
+                            </div>
+                            <div class="timeline-content">
+                                <h3>Begraving Margraten</h3>
+                                <p class="date">1949</p>
+                                <p>Peters lichaam wordt overgebracht naar de American Cemetery in Margraten, Nederland.</p>
+                                <img src="/images/10-margraten/graf-margraten.jpg" alt="Begraafplaats Margraten" class="timeline-image" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY PAGE -->
+        <section id="galerij" class="page">
+            <div class="container">
+                <h1>Fotogalerij</h1>
+                <p class="subtitle">Archiefafbeeldingen en historische documenten</p>
+
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">Alles</button>
+                    <button class="filter-btn" data-filter="beieren">Beieren</button>
+                    <button class="filter-btn" data-filter="amerika">Amerika</button>
+                    <button class="filter-btn" data-filter="oorlog">Oorlog</button>
+                    <button class="filter-btn" data-filter="lena">Correspondentie</button>
+                    <button class="filter-btn" data-filter="margraten">Margraten</button>
+                </div>
+
+                <div id="gallery-grid" class="gallery-grid">
+                    <!-- Gegenereerd met JavaScript -->
+                </div>
+
+                <!-- Lightbox -->
+                <div id="lightbox" class="lightbox">
+                    <button class="lightbox-close">&times;</button>
+                    <button class="lightbox-prev">❮</button>
+                    <button class="lightbox-next">❯</button>
+                    <div class="lightbox-content">
+                        <img id="lightbox-image" src="" alt="">
+                        <div id="lightbox-caption" class="lightbox-caption"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESEARCH PAGE -->
+        <section id="onderzoek" class="page">
+            <div class="container">
+                <h1>Onderzoeks­methode</h1>
+                <p class="subtitle">Hoe deze biografie werd reconstructed</p>
+
+                <div class="research-grid">
+                    <article class="research-method">
+                        <h3>📚 Archiefonderzoek</h3>
+                        <p>
+                            Onderzoek in het National Archives and Records Administration (NARA), Amerikaanse militaire 
+                            records, Duitse burgeradministratie, en Nederlandse begraafplaatsregisters.
+                        </p>
+                    </article>
+
+                    <article class="research-method">
+                        <h3>🧬 Genealogie</h3>
+                        <p>
+                            Speurwerk naar familierecords, passagierslijsten, naturalisatiedocumenten en 
+                            volkstellingsgegevens om de familieboom en levenspath van Peter in kaart te brengen.
+                        </p>
+                    </article>
+
+                    <article class="research-method">
+                        <h3>📋 Militaire Morning Reports</h3>
+                        <p>
+                            Digitalisering van dagelijkse militaire verslagen van de 50th Signal Battalion van juni 1944 
+                            tot april 1945, die Peters locatie en activiteiten documenteren.
+                        </p>
+                    </article>
+
+                    <article class="research-method">
+                        <h3>💌 Correspondentie</h3>
+                        <p>
+                            Brieven van Lena Klopfer, Peters nicht, die in de jaren 1940-1950 contact zocht naar Amerikaanase 
+                            familieleden en veel informatie over Peter bevat.
+                        </p>
+                    </article>
+
+                    <article class="research-method">
+                        <h3>🗂️ Overige bronnen</h3>
+                        <p>
+                            Natuuralisatiekaarten, militaire identiteitskaarten, Purple Heart records, interment certificates, 
+                            repatriatie documenten en lokale archieven.
+                        </p>
+                    </article>
+
+                    <article class="research-method">
+                        <h3>🔍 Verificatie</h3>
+                        <p>
+                            Cross-reference van alle bronnen om nauwkeurigheid en consistentie te waarborgen. 
+                            Waar bronnen tegenstrijdig zijn, wordt dit expliciet vermeld.
+                        </p>
+                    </article>
+                </div>
+
+                <section class="sources-section">
+                    <h2>Compleet bronnenregister</h2>
+                    <div class="sources-list">
+                        <h4>NARA — National Archives and Records Administration</h4>
+                        <ul>
+                            <li>Compiled Military Service Records (CMSR)</li>
+                            <li>50th Signal Battalion Morning Reports (1943–1945)</li>
+                            <li>1st Army Operational Records</li>
+                            <li>Court of Appeals Records</li>
+                        </ul>
+
+                        <h4>Militaire documenten</h4>
+                        <ul>
+                            <li>Naturalization Card (1935)</li>
+                            <li>Military Service Record Card</li>
+                            <li>Purple Heart Award Certificate</li>
+                            <li>Interment Record (American Cemetery Margraten)</li>
+                        </ul>
+
+                        <h4>Civiele archieven</h4>
+                        <ul>
+                            <li>Milwaukee City Directory (1930–1941)</li>
+                            <li>U.S. Census Records (1930, 1940)</li>
+                            <li>Passagierslijsten (Ellis Island, Hamburg)</li>
+                            <li>German Vital Records (Bad Reichenhall)</li>
+                        </ul>
+
+                        <h4>Particuliere bronnen</h4>
+                        <ul>
+                            <li>Correspondentie Lena Klopfer (1945–1950)</li>
+                            <li>Familiedocumenten</li>
+                            <li>Bevrijdingsgetuigenissen</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <div class="methodology-note">
+                    <h3>Methodologische opmerkingen</h3>
+                    <p>
+                        Dit project past rigoureus archiefonderzoek toe om een historisch nauwkeurig beeld van Peter Wachter 
+                        te geven. Waar onzekerheid of hiaten voorkomen, wordt dat duidelijk aangegeven.
+                    </p>
+                    <p>
+                        De originele bronnen (brieven, militaire documenten, foto's) zijn waar mogelijk gedigitaliseerd 
+                        en in de galerij en downloadcentrum opgenomen.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOWNLOADS PAGE -->
+        <section id="download" class="page">
+            <div class="container">
+                <h1>Download & Bronnen</h1>
+                <p class="subtitle">Het volledige onderzoeksmateriaal</p>
+
+                <div class="downloads-grid">
+                    <article class="download-card">
+                        <h3>📖 Levensverhaal (PDF)</h3>
+                        <p>Het volledige levensverhaal van Peter Wachter, 12 hoofdstukken met fotomateriaal.</p>
+                        <a href="/pdf/Levensverhaal_Peter_Wachter.pdf" download class="btn btn-small">
+                            Download PDF
+                        </a>
+                    </article>
+
+                    <article class="download-card">
+                        <h3>📋 Bronverantwoording</h3>
+                        <p>Gedetailleerd register van alle gebruikte bronnen, archieven en referenties.</p>
+                        <a href="/documents/sources/Bronverantwoording.pdf" download class="btn btn-small">
+                            Download (PDF)
+                        </a>
+                    </article>
+
+                    <article class="download-card">
+                        <h3>📜 Militaire documenten</h3>
+                        <p>Scans van originele militaire records, naturalisatiekaarten en militaire identiteitskaarten.</p>
+                        <a href="/documents/military_records/" class="btn btn-small">
+                            Bekijk map
+                        </a>
+                    </article>
+
+                    <article class="download-card">
+                        <h3>💌 Correspondentie</h3>
+                        <p>Brieven van Lena Klopfer en andere correspondentie uit de jaren 1945–1950.</p>
+                        <a href="/documents/correspondence/" class="btn btn-small">
+                            Bekijk map
+                        </a>
+                    </article>
+
+                    <article class="download-card">
+                        <h3>📊 Morning Reports</h3>
+                        <p>Dagelijkse militaire verslagen van de 50th Signal Battalion (juni 1944 – april 1945).</p>
+                        <a href="/documents/morning_reports/" class="btn btn-small">
+                            Bekijk map
+                        </a>
+                    </article>
+
+                    <article class="download-card">
+                        <h3>🗂️ Genealogie</h3>
+                        <p>Stammenbomen en genealogische notities.</p>
+                        <a href="/documents/genealogy/" class="btn btn-small">
+                            Bekijk map
+                        </a>
+                    </article>
+                </div>
+
+                <section class="license-section">
+                    <h2>Hergebruik & Licentie</h2>
+                    <p>
+                        Dit materiaal is beschikbaar voor educatieve, historische en persoonlijke doeleinden. 
+                        Voor hergebruik in publicaties of tentoonstellingen, neem contact op.
+                    </p>
+                    <p class="cc-license">
+                        <strong>Licentie:</strong> Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+                    </p>
+                </section>
+            </div>
+        </section>
+
+        <!-- ABOUT PAGE -->
+        <section id="over" class="page">
+            <div class="container">
+                <h1>Over dit project</h1>
+
+                <article class="about-section">
+                    <h2>Over Ronald Brekelmans</h2>
+                    <p>
+                        Ronald Brekelmans is een Nederlandse historicus, UX-designer en front-end developer. In 2020 
+                        adopteerde hij Peters graf op de Amerikaanse Begraafplaats in Margraten als onderdeel van zijn 
+                        persoonlijke project om de verhalen van bevrijders levend te houden.
+                    </p>
+                    <p>
+                        Sinds die tijd heeft Ronald in-depth onderzoek uitgevoerd in Nederlandse, Duitse en Amerikaanse archieven, 
+                        interviewers gevoerd, militaire documenten gedigitaliseerd, en het volledige levensverhaal van Peter 
+                        Wachter gereconstrueerd.
+                    </p>
+                </article>
+
+                <article class="about-section">
+                    <h2>Het project</h2>
+                    <p>
+                        Deze website dient als:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Digitaal monument</strong> — Een permanente, doorzoekbare plek waar Peters verhaal en 
+                            erfenis voor altijd toegankelijk is.
+                        </li>
+                        <li>
+                            <strong>Historisch archief</strong> — Een wetenschappelijk onderbouwd verzameling van bronnen, 
+                            documenten en militaire records.
+                        </li>
+                        <li>
+                            <strong>Onderzoeksportfolio</strong> — Een demonstratie van methodologisch rigoureus historisch werk.
+                        </li>
+                        <li>
+                            <strong>Educatieve bron</strong> — Voor studenten, historici en bezoekers geïnteresseerd in WWII, 
+                            militaire geschiedenis, en bevrijdingsverhalen.
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="about-section">
+                    <h2>Doel voor de toekomst</h2>
+                    <p>
+                        Dit project is ontworpen om uitbreidbaar te zijn. Op de lange termijn wil Ronald dit model gebruiken om 
+                        de verhalen van andere bevrijders te documenteren — Amerikanen, Britten, Canadezen, Polen en anderen die 
+                        in 1944–1945 meededen aan de bevrijding van Europa.
+                    </p>
+                    <p>
+                        Elke bevrijder verdient zijn of haar eigen pagina, tijdlijn, galerij, en gerespecteerde plaats in onze 
+                        herinnering.
+                    </p>
+                </article>
+
+                <article class="about-section">
+                    <h2>Waarom dit belangrijk is</h2>
+                    <blockquote class="about-quote">
+                        "Een mens is pas echt vergeten wanneer zijn naam voor het laatst wordt genoemd."
+                    </blockquote>
+                    <p>
+                        Elke soldaat die stierf voor onze vrijheid was iemand: hij had dromen, familie, brieven geschreven, 
+                        vrienden gehad. Zijn verhaal verdient meer dan alleen een naam op een grafsteen.
+                    </p>
+                    <p>
+                        Dit project is een kleine poging om ervoor te zorgen dat Peters naam — en dat van veel anderen — 
+                        zal worden voortgezegd, gezocht, gelezen, en onthouden.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT PAGE -->
+        <section id="contact" class="page">
+            <div class="container">
+                <h1>Contact</h1>
+                <p class="subtitle">Vragen? Aanvullingen? Ik hoor het graag.</p>
+
+                <div class="contact-content">
+                    <article class="contact-form-section">
+                        <h2>Stuur een bericht</h2>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Naam</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">E-mailadres</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Onderwerp</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Bericht</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Verstuur</button>
+                            <p class="form-note">Dit formulier stuurt een e-mail naar ronald@brekelmans.nl</p>
+                        </form>
+                    </article>
+
+                    <aside class="contact-info">
+                        <h2>Andere kanalen</h2>
+                        
+                        <div class="contact-method">
+                            <h3>LinkedIn</h3>
+                            <p>
+                                <a href="https://linkedin.com/in/ronald-brekelmans" target="_blank" rel="noopener">
+                                    Ronald Brekelmans op LinkedIn
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="contact-method">
+                            <h3>E-mail</h3>
+                            <p>
+                                <a href="mailto:ronald@brekelmans.nl">ronald@brekelmans.nl</a>
+                            </p>
+                        </div>
+
+                        <div class="contact-method">
+                            <h3>Over onderzoeksvragen</h3>
+                            <p>
+                                Heb je informatie over Peter Wachter, zijn familie, of medekampioenen? Neem contact op!
+                            </p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Peter Wachter</h4>
+                    <p>
+                        Digitaal monument en onderzoeksproject van Ronald Brekelmans.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Snelle links</h4>
+                    <ul>
+                        <li><a href="#verhaal">Verhaal</a></li>
+                        <li><a href="#tijdlijn">Tijdlijn</a></li>
+                        <li><a href="#galerij">Galerij</a></li>
+                        <li><a href="#onderzoek">Onderzoek</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legaal</h4>
+                    <ul>
+                        <li><a href="#privacyverklaring">Privacyverklaring</a></li>
+                        <li><a href="#licentie">Licentie (CC BY-NC 4.0)</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="#contact">Contactformulier</a></li>
+                        <li><a href="https://linkedin.com/in/ronald-brekelmans" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ronald Brekelmans. Gemaakt met ❤️ voor Peters geheugen.</p>
+                <p>
+                    <a href="#top">↑ Naar boven</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>
